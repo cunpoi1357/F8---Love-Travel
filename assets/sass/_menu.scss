@@ -19,8 +19,14 @@
         background-color: var(--white-color);
         padding: 20px 16px;
         z-index: 2;
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
         transition: transform 0.5s;
-        transform: translateX(360px);
+        transition: transform 0.5s, -webkit-transform 0.5s;
+        -webkit-transform: translateX(360px);
+            -ms-transform: translateX(360px);
+                transform: translateX(360px);
     }
     &__close {
         position: absolute;
@@ -66,9 +72,15 @@
         position: fixed;
         overflow-y: scroll;
         z-index: 2;
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
         transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s;
         padding: 40px;
-        transform: translateX(300px);
+        -webkit-transform: translateX(300px);
+            -ms-transform: translateX(300px);
+                transform: translateX(300px);
         display: none;
         .menu__close {
             width: 30px;
@@ -122,22 +134,32 @@
     &__list {
         padding: 16px 16px;
         list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 30px;
     }
     &__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     &__img {
         width: 100px;
         height: 100px;
-        flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
         display: block;
         margin-right: 30px;
     }
     &__info {
-        flex-grow: 1;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
     }
     &__name {
         margin-top: 6px;
@@ -174,9 +196,13 @@
 }
 
 #menu-checkbox:checked ~ .menu__container {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
 }
 
 #menu-checkbox:checked ~ .menu-mobile {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
 }

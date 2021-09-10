@@ -59,9 +59,15 @@
             left: 0;
             right: 0;
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             gap: 20px;
         }
         &__btn {
@@ -76,17 +82,30 @@
     }
     &-time {
         position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         left: 50%;
-        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
         &__item {
             background-color: var(--aqua-color);
             width: 122px;
             height: 115px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             color: var(--white-color);
             position: relative;
             &:not(:first-child)::before {
@@ -98,7 +117,9 @@
                 background-color: var(--aqua-color);
                 -webkit-filter: brightness(90%);
                         filter: brightness(90%);
-                transform: skewX(-9deg);
+                -webkit-transform: skewX(-9deg);
+                    -ms-transform: skewX(-9deg);
+                        transform: skewX(-9deg);
             }
         }
         &__number {
@@ -119,6 +140,8 @@
         }
     }
     &__option {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         
         &-img {
@@ -127,10 +150,13 @@
             -o-object-fit: cover;
                object-fit: cover;
             margin-right: 20px;
-            flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
         }
         &-content {
-            flex-grow: 1;
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
         }
         &-title {
             font-size: 2.4rem;
