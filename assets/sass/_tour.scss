@@ -48,7 +48,8 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
             height: 100%;
             width: 100%;
         }
@@ -95,7 +96,8 @@
                 height: 40%;
                 width: 3px;
                 background-color: var(--aqua-color);
-                filter: brightness(90%);
+                -webkit-filter: brightness(90%);
+                        filter: brightness(90%);
                 transform: skewX(-9deg);
             }
         }
@@ -122,7 +124,8 @@
         &-img {
             width: 52px;
             height: 52px;
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
             margin-right: 20px;
             flex-shrink: 0;
         }

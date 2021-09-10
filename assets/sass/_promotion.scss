@@ -4,7 +4,8 @@
     }
     &__img {
         width: 100%;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
         display: block;
     }
     &__logo {
@@ -21,7 +22,8 @@
         &-img {
             width: 26px;
             height: 26px;
-            object-fit: contain;
+            -o-object-fit: contain;
+               object-fit: contain;
         }
         &--yellow {
             background: linear-gradient(to right, var(--yellow-color) 0%, #ff9b05 100%);
