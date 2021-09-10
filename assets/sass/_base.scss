@@ -8,9 +8,9 @@ body {
 }
 
 html {
+    font-family: 'Poppins', sans-serif;
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: 'Poppins', sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     
@@ -27,19 +27,23 @@ html {
 
 .title-section {
     &__sub {
-        color: var(--gray-color);
         font-size: 1.4rem;
         font-weight: 300;
         letter-spacing: 0.2rem;
         line-height: 1.4rem;
+        
         margin: 0 0 20px;
+
+        color: var(--gray-color);
     }
     &__heading {
-        color: var(--text-color);
+        margin: 0;
+
         font-size: 3.6rem;
         font-weight: 700;
         line-height: 3.6rem;
-        margin: 0;
+        
+        color: var(--text-color);
     }
 }
 
@@ -73,17 +77,22 @@ html {
 }
 
 .btn {
+    display: inline-block;
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
     text-decoration: none;
+    text-transform: uppercase;
+
     color: var(--white-color);
     background-color: var(--white-color);
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    padding: 10px 20px;
-    border-radius: 30px;
-    display: inline-block;
-    border: none;
+
     cursor: pointer;
+
     &--big {
         padding: 16px 34px;
     }
@@ -179,14 +188,17 @@ html {
 }
 
 .content-section {
-    padding: 60px 0 76px;
-    background-color: var(--white-color);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+
+    padding: 60px 0 76px;
+
+    background-color: var(--white-color);
+    
     &__title {
         text-align: center;
         margin-bottom: 50px;
