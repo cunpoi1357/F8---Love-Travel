@@ -13,7 +13,8 @@
     }
     &__img {
         width: 100%;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
         display: block;
     }
     &__overlay {
@@ -64,7 +65,8 @@
         align-items: center;
         justify-content: center;
         color: var(--white-color);
-        animation: FaceInSlide linear 0.5s;
+        -webkit-animation: FaceInSlide linear 0.5s;
+                animation: FaceInSlide linear 0.5s;
         will-change: opacity;
         display: none;
     }

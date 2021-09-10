@@ -191,12 +191,14 @@ html {
 .header__logo {
   width: 160px;
   height: 37px;
+  -o-object-fit: contain;
   object-fit: contain;
   margin-right: 65px;
 }
 
 .nav {
   margin-top: 8px;
+  z-index: 1;
 }
 .nav__list {
   display: flex;
@@ -316,6 +318,7 @@ html {
 }
 .menu__img {
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .menu__container {
@@ -344,6 +347,7 @@ html {
 .menu__close-img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .menu__sub-heading {
@@ -464,6 +468,7 @@ html {
 .package__local-img {
   width: 14px;
   height: 14px;
+  -o-object-fit: cover;
   object-fit: cover;
   margin-right: 2px;
 }
@@ -514,6 +519,8 @@ html {
   display: inline-block;
 }
 .search__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   background-color: #f9f9f9;
   padding: 10px 25px;
@@ -568,6 +575,7 @@ html {
 .typologie__img {
   width: 40px;
   height: 40px;
+  -o-object-fit: cover;
   object-fit: cover;
   margin-bottom: 8px;
 }
@@ -640,6 +648,7 @@ html {
 }
 .proposal__img {
   width: 100%;
+  -o-object-fit: contain;
   object-fit: contain;
   display: block;
 }
@@ -687,6 +696,7 @@ html {
   align-items: center;
   justify-content: center;
   color: var(--white-color);
+  -webkit-animation: FaceInSlide linear 0.5s;
   animation: FaceInSlide linear 0.5s;
   will-change: opacity;
   display: none;
@@ -772,6 +782,7 @@ html {
   position: absolute;
   right: 0;
   bottom: 0;
+  -o-object-fit: cover;
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -820,6 +831,7 @@ html {
   height: 40%;
   width: 3px;
   background-color: var(--aqua-color);
+  -webkit-filter: brightness(90%);
   filter: brightness(90%);
   transform: skewX(-9deg);
 }
@@ -845,6 +857,7 @@ html {
 .tour__option-img {
   width: 52px;
   height: 52px;
+  -o-object-fit: cover;
   object-fit: cover;
   margin-right: 20px;
   flex-shrink: 0;
@@ -906,6 +919,7 @@ html {
 }
 .promotion__img {
   width: 100%;
+  -o-object-fit: contain;
   object-fit: contain;
   display: block;
 }
@@ -924,6 +938,7 @@ html {
 .promotion__logo-img {
   width: 26px;
   height: 26px;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 .promotion__logo--yellow {
