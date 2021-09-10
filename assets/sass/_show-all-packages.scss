@@ -2,8 +2,12 @@
     height: 235px;
     background-image: url(.././img/parallax-search-2.jpg);
     background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     &__text {
         color: var(--white-color);
         font-size: 50px;
