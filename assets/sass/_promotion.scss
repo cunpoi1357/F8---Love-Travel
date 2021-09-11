@@ -8,41 +8,81 @@
         width: 100%;
 
         -o-object-fit: contain;
-           object-fit: contain;
+        object-fit: contain;
     }
     &__logo {
         position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
         top: -25px;
         right: 20px;
-        
+
         height: 50px;
         width: 50px;
-        
+
         border-radius: 50%;
         &-img {
             height: 26px;
             width: 26px;
 
             -o-object-fit: contain;
-               object-fit: contain;
+            object-fit: contain;
         }
         &--yellow {
-            background: -o-linear-gradient(left, var(--yellow-color) 0%, #ff9b05 100%);
-            background: -webkit-gradient(linear, left top, right top, from(var(--yellow-color)), to(#ff9b05));
-            background: linear-gradient(to right, var(--yellow-color) 0%, #ff9b05 100%);
+            background: -o-linear-gradient(
+                left,
+                var(--yellow-color) 0%,
+                #ff9b05 100%
+            );
+            background: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                from(var(--yellow-color)),
+                to(#ff9b05)
+            );
+            background: linear-gradient(
+                to right,
+                var(--yellow-color) 0%,
+                #ff9b05 100%
+            );
         }
         &--red {
-            background: -o-linear-gradient(left, var(--red-color) 0%, #f78d65 100%);
-            background: -webkit-gradient(linear, left top, right top, from(var(--red-color)), to(#f78d65));
-            background: linear-gradient(to right, var(--red-color) 0%, #f78d65 100%);
+            background: -o-linear-gradient(
+                left,
+                var(--red-color) 0%,
+                #f78d65 100%
+            );
+            background: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                from(var(--red-color)),
+                to(#f78d65)
+            );
+            background: linear-gradient(
+                to right,
+                var(--red-color) 0%,
+                #f78d65 100%
+            );
         }
         &--purple {
             background: -o-linear-gradient(left, #ba71da 0%, #da717b 100%);
-            background: -webkit-gradient(linear, left top, right top, from(#ba71da), to(#da717b));
+            background: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                from(#ba71da),
+                to(#da717b)
+            );
             background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
         }
     }
@@ -53,40 +93,40 @@
 
         padding: 4px 12px;
         border-radius: 30px;
-        
+
         font-size: 1.3rem;
         letter-spacing: 0.1rem;
         line-height: 1.3rem;
-        
+
         color: var(--white-color);
         background-color: var(--text-color);
     }
     &__info {
         position: relative;
-        
+
         padding: 30px;
         border: var(--border);
     }
     &__city {
         margin-top: 0;
         margin-bottom: 10px;
-       
+
         font-size: 2rem;
         font-weight: 700;
         line-height: 2rem;
-        
+
         color: var(--text-color);
     }
     &__location {
         margin-bottom: 15px;
         padding-bottom: 20px;
         border-bottom: var(--border);
-        
+
         font-size: 1.4rem;
         font-weight: 400;
         line-height: 1.4rem;
         letter-spacing: 0.2rem;
-        
+
         color: var(--gray-color);
         &-logo {
             height: 14px;
@@ -95,7 +135,7 @@
     }
     &__type {
         display: block;
-        
+
         font-size: 1.3rem;
         font-weight: 400;
         line-height: 2rem;
@@ -109,11 +149,11 @@
 
         padding: 1px 10px;
         border-radius: 30px;
-        
+
         font-size: 1rem;
         letter-spacing: 0.1rem;
         line-height: 1.4rem;
-        
+
         color: var(--white-color);
         &--yellow {
             background-color: var(--yellow-color);
@@ -125,7 +165,8 @@
             background-color: var(--purple-color);
         }
     }
-    &__price, &__price-dollar {
+    &__price,
+    &__price-dollar {
         font-size: 2.4rem;
         letter-spacing: 0.1rem;
         line-height: 2.4rem;
@@ -137,30 +178,30 @@
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
         &-old {
             margin-right: 8px;
-            
+
             font-size: 2rem;
             letter-spacing: 0.1rem;
             text-decoration: line-through;
-            
+
             color: var(--gray-color);
         }
         &-dollar {
             margin-left: 8px;
-        }        
+        }
     }
     &__desc {
         margin-bottom: 20px;
         padding-top: 20px;
         border-top: var(--border);
-        
+
         font-size: 1.4rem;
         line-height: 2.7rem;
         letter-spacing: 0.1rem;
-        
+
         color: var(--gray-color);
     }
 }
